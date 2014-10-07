@@ -34,3 +34,6 @@ function retweetLatest() {
 	});
 }
 
+// try to retweet something as soon as program is ran
+retweetLatest();
+setInterval(retweetLatest, 1000 * 60 * 5); // retweets every 5 minutes
