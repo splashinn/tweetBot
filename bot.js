@@ -5,7 +5,7 @@ var Twit = require('twit');
 var T = new Twit(require('./config.js'));
 
 // url for the search based on the hashtag
-var hashtag = {q: '#javascript', '#rails', count: 10, result_type = 'recent'};
+var hashtag = {q: '#javascript', count: 10, result_type: 'recent'};
 
 // this function finds the latest tweet with the hashtags defined and retweets them
 function retweetLatest() {
@@ -36,4 +36,4 @@ function retweetLatest() {
 
 // try to retweet something as soon as program is ran
 retweetLatest();
-setInterval(retweetLatest, 1000 * 60 * 5); // retweets every 5 minutes
+setInterval(retweetLatest, 1000 * 60 * 1); 
